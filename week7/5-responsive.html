@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Learning Responsive</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      background-color: #c0c0c0;
+    }
+
+    .wrapper {
+      width: 1000px;
+      margin: 0 auto;
+    }
+
+    article, aside {
+      float: left;
+      height: 100px;
+    }
+
+    article {
+      width: 800px;
+      background-color: white;
+    }
+
+    aside {
+      width: 200px;
+      background-color: yellowgreen;
+    }
+
+    @media screen and (max-width: 1000px) {
+      .wrapper {
+        width: 800px;
+      }
+
+      article {
+        width: 600px;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      .wrapper {
+        width: 600px;
+      }
+
+      article {
+        width: 400px;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .wrapper, article, aside {
+        width: auto;
+      }
+      article, aside {
+        float: none;
+      }
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div class="wrapper">
+    <article>article</article>
+    <aside>side bar</aside>
+  </div>
+
+</body>
+</html>

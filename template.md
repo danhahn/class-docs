@@ -1,0 +1,68 @@
+# Building a HTML template
+
+We want to build a template to once so we do not have to write it every time.  
+
+## Saving
+
+To create any `html` file you need to `save as` `.html` to make the file in to an html file.
+
+### Steps
+
+1. `File` > `New File`
+2. `File` > `Save As...`
+3. Enter `template.html` in the `Save As` box.
+3. Select location to save (in our case **Documents/your_name**).
+4. Add the code below.
+5. Click `Save` Button
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
+```
+We will use this as our starting point for all `html` files that we need to create going forward.  
+
+## Using the template
+
+Now what we have the template created we just need to save a copy of it.
+
+### Steps
+
+1. `File` > `Open...`
+2. `File` > `Save As...`
+3. Enter a name for your file in the `Save As` box.  
+4. Ensure that the name has no spaces, is all lowercase and has `.html` as an extension.
+5. Select location to save.
+6. Click `Save` button
+
+## Parts of the template
+
+### DOCTYPE
+
+`<!DOCTYPE>` informs the browser which version of HTML you used to write the document. Doctype is a declaration, not a tag.
+
+
+### html
+
+The `<html>` element (or HTML root element) represents the root of an HTML document. All other elements must be descendants of this element.
+
+It may have an attribute of `lang="en"` to define the language that is used on the page. In our case we are sending it to english.
+
+### head
+
+The `<head>` element provides general information (metadata) about the document, including its title and links to/definitions of scripts and style sheets. The `<head>` is a child of `<html>`.
+
+### body
+
+The `<body>` element represents the content of an HTML document. There can be only one <body> element in a document. The `<body>` is a child of `<html>`.
+
+### title
+
+The `<title>` element defines the title of the document, shown in a browser's title bar or on the page's tab. It can only contain text, and any contained tags are ignored.  The `<title>` is a child of `<head>`.

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Style a table</title>
+	
+	<style>
+	body {
+		font: 14px arial;
+		background-color: #c0c0c0;
+	}
+
+	.contacts {
+		border: 1px solid gray;
+		width: 400px;
+		border-collapse: collapse;
+	}
+
+	.contacts a {
+		color: black;
+	}
+
+	.contacts td, 
+	.contacts th {
+		border-bottom: 1px solid gray;
+		padding: 5px 10px;
+	}
+
+	.contacts th {
+		background-color: black;
+		color: white;
+		text-align: left;
+	}
+
+	.contacts .name {
+		width: 150px;
+	}
+
+	.contacts .email {
+		width: 250px;
+	}
+
+	.contacts .even {
+		background-color: white
+	}
+
+	.contacts .odd {
+		background-color: lightgreen;
+	}
+	</style>
+	
+</head>
+
+<body>
+
+<!-- begin table -->
+<table class="contacts">
+	<tr>
+		<th class="name">Name</th>
+		<th class="email">Email</th>
+	</tr>
+	<tr class="even">
+		<td class="name">Dan</td>
+		<td class="email"><a href="mailto:dan@svahtml.com">dan@svahtml.com</a></td>
+	</tr>
+	<tr class="odd">
+		<td class="name">Tim</td>
+		<td class="email"><a href="mailto:tim@apple.com">tim@apple.com</a></td>
+	</tr>
+	<tr class="even">
+		<td class="name">Larry</td>
+		<td class="email"><a href="mailto:larry@google.com">larry@gogle.com</a></td>
+	</tr>
+	<tr class="odd">
+		<td class="name">Bill</td>
+		<td class="email"><a href="mailto:bill@microsoft.com">bill@microsoft.com</a></td>
+	</tr>
+</table>
+<!-- end table -->
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<head>
+	<title>Basic Nav</title>
+	
+	<style>	
+		body {
+			font: 15px arial;
+		}
+
+		nav {
+			background-color: darkgray;
+		}
+
+		nav:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		nav li {
+			float: left;
+		}
+
+		nav li:last-child {
+			background-color: red;
+		}
+
+		nav a {
+			text-decoration: none;
+			color: black;
+			display: block;
+			padding: 10px 20px;
+		}
+
+		nav a:hover {
+			background-color: black;
+			color: white;
+		}
+
+	</style>
+	
+</head>
+<body>
+
+	<nav>
+		<ul>
+			<li><a href="index.html">home</a></li>
+			<li><a href="news.html">news</a></li>
+			<li><a href="entertainment.html">entertainment</a></li>
+			<li><a href="sports.html">sports</a></li>
+			<li><a href="weather.html">weather</a></li>
+		</ul>
+	</nav>
+	
+</body>
+</html>

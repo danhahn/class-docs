@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intro to Javascript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Intro to Javascript</h1>
+
+        <button id="mybutton">Change Colors</button>
+
+        <h2>variables</h2>
+
+        <p>variables are container for storing data values.</p>
+
+        <p>var variableName;</p>
+
+        <h2>Types of Javascript Data</h2>
+
+        <ul>
+            <li>string</li>
+            <li>number</li>
+            <li>boolean</li>
+            <li>array</li>
+            <li>object</li>
+        </ul>
+
+        <h2>string</h2>
+
+        <p>a string is collection of characters like 'ABC' or 'R2D2'</p>
+
+        <p>var mySting = "This is a string";</p>
+
+        <h2>number</h2>
+
+        <p>a number is number that math can be done on.</p>
+
+        <p>var myNumber = 129;</p>
+
+        <h2>boolean</h2>
+
+        <p>a boolean is a true or false value</p>
+
+        <p>var myBoolean = true;</p>
+
+        <h2>array</h2>
+
+        <p>a array is ordered collection of js data types</p>
+
+        <p>arrys can contain strings, numbers, booleans, arrays or objects</p>
+
+        <p>var myArray = ['string', 2, false, [1,2], {data: 'yes'}];</p>
+
+        <h2>object</h2>
+
+        <p>an object is a collection of data</p>
+
+        <p>var myObj = {name: 'Dan'};</p>
+
+        <p>myObj.name // returns Dan</p>
+
+        <h2>If statements</h2>
+
+        <p>javascript can look at a variable and act on it base on if it is true or false</p>
+
+        <h2>function</h2>
+
+        <p>a function is a way to run javascript on demand.</p>
+
+    </div>
+
+
+    <script>
+        /* long form comment many lines*/
+        // short form comment single 
+
+        // commmand forward slash `/` will add a comment
+
+        // alert('hello world!');
+
+        // Working with Text
+
+        var text1 = 'Hello';
+        var text2 = 'World';
+
+        var message = text1 + ' ' + text2 + '!';
+
+        console.log(message);
+
+        // Working with Numbers
+
+        var randomNumber = Math.random();
+
+        console.log(randomNumber);
+
+        var num1 = 10;
+        var num2 = 51;
+
+        var total = (num1 + num2) / 3;
+
+        var round = Math.round(total);
+
+        console.log(round);
+
+        // working with booleans
+
+        var myCheck = false;
+
+        if (myCheck != true) {
+            console.log('This is true');
+        } else {
+            console.log('This is false');
+        }
+
+        // working with Arrays
+
+        var myArray = ['apple', 'orange', 'grape', 'strawberry'];
+
+        if (myArray.length == 4) {
+            myArray.push('pineapple');
+        }
+
+        for (var i = 0; i < myArray.length; i++) {
+            console.log(myArray[i]);
+        }
+
+        // working with Objects 
+
+        var myObj = {
+            firstName: 'Dan',
+            lastName: 'Hahn',
+            email: 'dan@svahtml.com'
+        };
+
+        myObj.fullName = myObj.firstName + " " + myObj.lastName;
+
+        console.log(myObj.fullName);
+
+        // Working with Functions 
+
+        function colorChange() {
+            
+            var allPs = document.querySelectorAll('p');
+
+            for (var i = 0; i < allPs.length; i++) {
+                allPs[i].style.color = "red";
+            }
+
+        }
+
+        var myButton = document.getElementById('mybutton');
+
+        myButton.addEventListener('click', colorChange);
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>

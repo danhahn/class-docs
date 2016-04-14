@@ -1,0 +1,11 @@
+node_modules
+dist/
+*.gif
+*.png
+*.jpg
+week*/*.css
+week*/**/*.css
+week*/**/*.js
+*.txt
+*.zip
+*.php

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Intro Table</title>
+
+	<style>
+	body {
+		margin: 0;
+		font: 14px arial;
+		background-color: #c0c0c0;
+	}
+
+	.container {
+		width: 800px;
+		padding: 20px;
+		background-color: white;
+		margin: 0 auto;
+	}
+
+	li {
+		line-height: 1.5em;
+	}
+
+	code {
+		background-color: lightblue;
+		border: 1px solid darkblue;
+		padding: 2px;
+		border-radius: 3px;
+	}
+
+	table, td, th {
+		border: 1px solid gray;
+	}
+
+	.amount-table th {
+		width: 100px;
+		text-align: left;
+	}
+
+	.amount-table thead th {
+		background-color: yellowgreen;
+	}
+
+	.amount-table tbody th {
+		background-color: lightblue;
+		font-weight: normal;
+	}
+
+	.span-table {
+		width: 400px;
+	}
+
+	.span-table td {
+		width: 25%;
+		text-align: center;
+		background-color: lightgray;
+	}
+
+	</style>
+	
+</head>
+
+<body>
+
+<div class="container">
+	<h1>Intro to Tables</h1>
+
+	<p>Tables are away to display "charts" of data in HTML form.</p>
+
+	<h2>Parts of the table</h2>
+
+	<ul>
+		<li><code>&lt;table&gt;</code> - <em>tag</em> - defines the start and stop of a table.</li>
+		<li><code>&lt;tr&gt;</code> - <em>tag</em> - <strong>table row</strong> defines the start and stop of a table row.</li>
+		<li><code>&lt;td&gt;</code> - <em>tag</em> - <strong>table data</strong> defines the start and stop of a table data (cell).</li>
+	</ul>
+
+	<h2>My Frist Table</h2>
+
+	<!-- begin table -->
+	<table>
+		<tr>
+			<td>My First Table</td>
+		</tr>
+	</table>
+	<!-- end table -->
+
+	<h2>Adding a row to a table</h2>
+
+	<p>When adding a row to a table you need to add <code>&lt;tr&gt;</code></p>
+
+	<!-- begin table -->
+	<table>
+		<tr>
+			<td>Row 1 Col 1</td>
+		</tr>
+		<tr>
+			<td>Row 2 Col 1</td>
+		</tr>
+	</table>
+	<!-- end table -->
+
+	<h2>Adding a column to table you need to add ????</h2>
+
+	<!-- begin table -->
+	<table>
+		<tr>
+			<td>Row 1 Col 1</td>
+			<td>Row 1 Col 2</td>
+		</tr>
+		<tr>
+			<td>Row 2 Col 1</td>
+			<td>Row 2 Col 2</td>
+		</tr>
+	</table>
+	<!-- end table -->
+
+	<h2>Adding a header to a table</h2>
+
+	<!-- begin table -->
+	<table>
+		<tr>
+			<th>First Name</th>
+			<th>Email Address</th>
+		</tr>
+		<tr>
+			<td>Todd</td>
+			<td>todd@gmail.com</td>
+		</tr>
+		<tr>
+			<td>Elizabeth</td>
+			<td>elizabeth@applecomputers.com</td>
+		</tr>
+	</table>
+	<!-- end table -->
+
+	<h2>Adding a thead or tbody</h2>
+
+	<!-- begin table -->
+	<table class="amount-table">
+		<thead>
+			<tr>
+				<th>City</th>
+				<th>Year</th>
+				<th>Amount</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>New York</th>
+				<td>2012</td>
+				<td>75</td>
+			</tr>
+			<tr>
+				<th>Boston</th>
+				<td>1999</td>
+				<td>12</td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- end table -->
+
+	<h2>colspan and rowspan</h2>
+
+	<!-- begin table -->
+	<table class="span-table">
+		<tr>
+			<td colspan="4">a</td>			
+		</tr>
+		<tr>
+			<td rowspan="3">e</td>
+			<td>f</td>
+			<td>g</td>
+			<td>h</td>
+		</tr>
+		<tr>			
+			<td>j</td>
+			<td rowspan="2" colspan="2">k</td>			
+		</tr>
+		<tr>			
+			<td>n</td>			
+		</tr>
+	</table>
+
+	<!-- end table -->
+
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

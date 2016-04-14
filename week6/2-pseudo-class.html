@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+	<title>pseudo class</title>
+    
+    <style>
+        body {
+            background-color: #c0c0c0;
+            margin: 0;
+            font: 12px arial;
+            color: #333333;
+        }
+        
+        #site {
+            width: 800px;
+            padding: 20px;
+            background-color: #ffffff;
+            margin: 0 auto;
+        }
+        
+        a {
+            color: maroon;
+            text-decoration: none;
+        }
+
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: teal;
+        }
+
+        a:hover {
+            color: pink;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: navy;
+        }
+
+        header {
+            padding: 10px;
+            border: 1px solid gray;
+            transition: all .3s;
+        }
+
+        header:hover {
+            background-color: orange;
+        }
+
+        input {
+            width: 100px;
+            border: 2px solid gray;
+            padding: 2px;
+            outline: none;
+            transition: width .5s;
+        }
+
+        input:focus {
+            border-color: lightblue;
+            width: 200px;
+        }
+        
+        
+    </style>
+    
+</head>
+<body>
+
+<div id="site">
+	<header>
+		<h1>Pseudo Class</h1>
+	</header>
+	<article>
+		<h2>Types of pseudo classes</h2>
+		<ul>
+			<li>link</li>
+			<li>visited</li>
+			<li>active</li>
+			<li>hover</li>
+			<li>focus</li>
+		</ul>
+
+		<p>Pseudo Class - <a href="http://www.cnn.com">Example link</a></p>
+
+		<h3>Adding Focus</h3>
+
+		<section>
+			<input type="text"/>
+		</section>
+
+
+	</article>
+	<footer>
+		<p>2013 SVAHTML</p>
+	</footer>
+</div>
+
+</body>
+</html>

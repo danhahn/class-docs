@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+	<title>Document</title>
+
+	<style>
+		/* NOTE we are adding height for this example only.  You should not define a height on a layout element. */
+
+		.container {
+			background-color: red;
+			width: 1000px;
+			margin: 0 auto;
+		}
+
+		header {
+			background-color: orange;
+			height: 75px;
+		}
+
+		section {
+			background-color: yellowgreen;
+		}
+
+		section:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		nav, article, aside {
+			float: left;
+		}
+
+		nav {
+			background-color: yellowgreen;
+			width: 200px;
+			height: 200px;
+		}
+
+		article {
+			background-color: white;
+			width: 600px;
+			height: 600px;
+		}
+
+		aside {
+			width: 200px;
+		}
+
+		footer {
+			background-color: blue;
+			height: 50px;
+		}
+	</style>
+
+</head>
+<body>
+
+<!-- NOTE we are adding height for this example only.  You should not define a height on a layout element. -->
+
+<div class="container">
+	<header>Header</header>
+	<section>
+		<nav>Navigation</nav>
+		<article>Content Area</article>
+		<aside>Side Content</aside>	
+	</section>
+	<footer>Footer</footer>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Background Examples</title>
+	<style>
+		body {
+			font: 14px verdana;
+			background-color: #c0c0c0;
+			/*background: linear-gradient(#2A1D32 0,#663399 20%) fixed;*/
+			background: url(images/site.jpg) no-repeat fixed center;
+			background-size: cover;
+		}
+
+		h1, h2, h3, h4, p {
+			margin: 0;
+		}
+
+		.container {
+			width: 800px;
+			margin: 20px auto;
+			padding: 20px;
+			background-color: rgba(255,255,255,.5);
+			box-shadow: 0 2px 10px rgba(0,0,0,.5);	
+		}
+
+		.background-example {
+			border: 2px solid gray;
+			height: 350px;		
+			margin: 10px 0;
+			padding: 20px;
+			/*background-color: #99ccff;*/
+			/*background-image: url(images/tile-back.png);*/
+			/*background-repeat: no-repeat;*/
+			/*background-repeat: repeat-x;*/
+			/*background-repeat: repeat-y;*/
+			/*background-position: 173px 191px;*/
+
+			background: url(images/tile-back.png) repeat-y #99ccff;
+			padding: 20px 20px 20px 120px;
+			transition: all 1s;
+		}
+
+		.background-example:hover {
+			background-position: 0 120px;
+		}
+
+		.multiple {
+			width: 550px;
+			height: 250px;
+			border: 2px solid gray;
+			margin: 20px 0;
+			background: 
+				url(images/sheep.png) no-repeat 400px bottom, 
+				url(images/sky.png)
+			;
+			transition: all 5s;
+		}
+
+		.multiple:hover {
+			background-position: 
+				25px bottom,
+				-100px top
+			;
+		}
+
+		ul li {
+			list-style-image: url(images/heart.png);		
+		}
+
+		p {
+			line-height: 1.5em;
+		}
+
+		.pdf {
+			color: red;
+			background: url(images/pdf.png) no-repeat right center;
+			padding-right: 25px;
+		}
+
+		.logo {
+			width: 200px;
+			height: 60px;
+			display: block;
+			background: url(images/logo.png);
+			text-indent: -999em;
+			outline: none;
+		}
+
+		@media screen and (max-width: 800px) {
+			.logo {
+				width: auto;
+				height: auto;
+				display: inline;
+				background: none;
+				text-indent: 0;
+				outline: none;
+			}
+		}
+
+		header {
+			background-image: linear-gradient(-45deg, blue 30%, red);
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="container">
+	<header>
+		<h1><a class="logo" href="http://www.svahtml.com">SVA HTML</a></h1>
+	</header>
+	<article>
+		<h2>Intro to Background</h2>
+
+		<p>Backgrounds a way to add branding to your page.</p>
+
+		<h3>Example</h3>
+		<div class="background-example">
+			<p>Pickled odio Terry Richardson McSweeney's, master cleanse meggings narwhal. Flexitarian drinking vinegar put a bird on it, Godard small batch master cleanse artisan reprehenderit. Williamsburg mlkshk banh mi ut, polaroid bicycle rights sartorial do tousled Wes Anderson ethical cray fingerstache mixtape. Bespoke actually brunch, jean shorts sartorial Portland nisi pariatur Austin Schlitz polaroid cliche Tonx. Brunch sriracha odio fingerstache, magna laborum four loko Intelligentsia +1 veniam. Officia tempor kitsch, Cosby sweater pariatur cred Blue Bottle fugiat hella High Life. Gentrify whatever Echo Park, plaid sapiente placeat quis Austin nisi Truffaut delectus nulla.</p>
+		</div>		
+
+		<h3>Multiple Backgrounds</h3>
+
+		<div class="multiple"></div>
+
+		<h2>Style List</h2>
+
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+		</ul>
+
+		<h2>Adding an Icon</h2>
+
+		<p>In this example we will be adding a small icon next to link.  This could be one for a link that is a pdf or zip.</p>
+
+		<p>Narwhal <a href="download.pdf" class="pdf">Brooklyn minim</a>, Marfa cray asymmetrical hoodie seitan occaecat Truffaut voluptate. Meh qui +1, Neutra do before they sold out labore Carles forage retro put a bird on it Echo Park tofu. Whatever stumptown mlkshk leggings 8-bit, disrupt McSweeney's fap polaroid food truck aute raw denim enim roof party fashion axe. </p>
+
+
+	</article>
+</div>
+
+</body>
+</html>
