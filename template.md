@@ -15,7 +15,7 @@ To create any `html` file you need to `save as` `.html` to make the file in to a
 4. Add the code below.
 5. Click `Save` Button
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,7 +47,6 @@ Now what we have the template created we just need to save a copy of it.
 ### DOCTYPE
 
 `<!DOCTYPE>` informs the browser which version of HTML you used to write the document. Doctype is a declaration, not a tag.
-
 
 ### html
 
