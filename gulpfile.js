@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var markdownpdf = require('gulp-markdown-pdf');
 
 gulp.task('default', function () {
-    return gulp.src('*/*.md')
+    return gulp.src(['*.md', '*/*.md'])
         .pipe(markdownpdf({
             highlightCssPath: "./styles/github.css"
         }))
